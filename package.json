@@ -1,0 +1,37 @@
+
+{
+  "name": "political-social-network",
+  "version": "1.0.0",
+  "description": "A “one stop shop” political social networking website where people can go to read news, browse actions they can take and/or events they can attend with friends to increase their political involvement.",
+  "main": "server.js",
+  "dependencies": {
+    "express-session": "^1.15.3",
+    "method-override": "^2.3.9",
+    "axios": "^0.16.2",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "moment": "^2.18.1",
+    "mysql": "^2.13.0",
+    "mysql2": "^1.3.6",
+    "nodemon": "^1.11.0",
+    "sequelize": "^4.3.2",
+    "sequelize-encrypted": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaomiThomson/political-social-network.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaomiThomson/political-social-network/issues"
+  },
+  "homepage": "https://github.com/NaomiThomson/political-social-network#readme"
+}

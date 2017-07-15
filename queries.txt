@@ -1,0 +1,12 @@
+select Users.email
+from Attendees a
+    inner join Users on Users.id = a.UserId
+where a.EventId = 1
+
+
+
+select e.title, e.location
+from Attendees a
+	right join Events e on e.id = a.EventId
+    inner join Users u on u.id = a.UserId
+where u.Id = 1

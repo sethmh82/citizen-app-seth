@@ -1,0 +1,34 @@
+events(*)
+>>list/calendar of events
+>>users can select events they want to attend
+>>significant events (find api)
+>>users can create events
+>> news/article feed
+
+1. create event form 
+>>location
+>>date/time
+>>title
+>>description
+>>host/creator (user)
+
+2. save event information to db
+>>create db with fields from above + field for attendees
+>>save form information to db
+>>when people click attend, save them to db
+
+3. display event page 
+>>location
+>>date/time
+>>title
+>>description
+>>host/creator (user)
+>>attendees
+
+4. pull events from API to auto generate 
+
+
+
+
+
+

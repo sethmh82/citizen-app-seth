@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--Fixed Navigation Bar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Citi(ZEN)</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1">
+                <!--Toggle Icon-->
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="active" role="presentation"><a href="#">Feed</a></li>
+                    <li role="presentation"><a href="#">Events</a></li>
+                    <li role="presentation"><a href="#">Following</a></li>
+                </ul>
+            </div>            
+        </div>
+    </nav>
+
+    <!--Search Dropdown-->
+    <div class="container">
+	    <div class="row">
+            <form class="navbar-search" role="search">
+                <div class="input-group">                
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-search btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span class="#"></span>
+                            <span class="#">Search</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-left" role="menu">
+                            <li>
+                                <a href="#">
+                                    <span class="#"></span>
+                                    <span class="#">Search By Location</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <span class="#"></span>
+                                <span class="#">Search By #HashTag </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>        
+                    <input type="text" class="form-control">                
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-search btn-default">
+                            GO!
+                        </button>                
+                    </div>
+                </div>  
+            </form>       
+        </div>
+
+        <br>
+
+        <!--Upcoming & Past Events-->
+        <div class="container">
+            <div class="col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Upcoming Events</h3></div>
+                    <div class="card-content">
+                        <div class="list-group text-center">
+                            <a href="#" class="list-group-item">First item</a>
+                            <a href="#" class="list-group-item">Second item</a>
+                            <a href="#" class="list-group-item">Third item</a>
+                            <a href="#" id="see-more-upc">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Past Events</h3></div>
+                    <div class="card-content">
+                        <div class="list-group text-center">
+                            <a href="#" class="list-group-item">First item</a>
+                            <a href="#" class="list-group-item">Second item</a>
+                            <a href="#" class="list-group-item">Third item</a>
+                            <a href="#" id="see-more-pst">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Events Near You Carosouel-->
+<div class="container">
+    <div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-9">
+                <h3>Events Near You</h3>
+            </div>
+            <div class="col-md-3">
+                <!-- Controls Btns-->
+                <div class="controls pull-right">
+                    <a class="left fa fa-chevron-left btn btn-success" href="#carousel-popular"
+                        data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                            data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="carousel-popular" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-12">
+                            <div class="col-item text-center">
+                                <div class="gradient text-center">
+                                    <h1>{{event name}}</h1>
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h3>
+                                                {{host}}</h3>
+                                            <h4>{{Event Location}}</h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h5>{{date}}</h5>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="#"></i><a href="#" class="hidden-sm">Attend</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!--Popular Events Caroseoul-->
+
+    <div class="row">
+        <div class="row">
+            <div class="col-md-9">
+                <h3>
+                    Popular Events</h3>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <!-- Controls -->
+                <div class="controls pull-right">
+                    <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-near-you"
+                        data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-primary" href="#carousel-example-generic"
+                            data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="carousel-near-you" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="col-item text-center">
+                                <div class="gradient text-center">
+                                    <h1>{{event name}}</h1>
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-8">
+                                            <h4>
+                                               {{host}}</h4>
+                                            <h5>{{Event Location}}</h5>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5>{{date}}</h5>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="#"></i><a href="#" class="hidden-sm">Attend</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center">
+        Footer
+    </footer>
+
+    <!--Footer-->
+  
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
